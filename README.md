@@ -1,7 +1,5 @@
 # Bem vindo(a) ao meu repositório do Desafio Mettzer!
 
-<br>
-
 ## Como rodar a aplicação
   - Clone o repositório: `git clone git@github.com:oguiaugusto/mettzer-challenge.git`
   - Na pasta da aplicação, use o comando `npm install`
@@ -13,8 +11,6 @@
   - Para iniciar a aplicação, use o comando `npm start`
 
 ---
-
-<br>
 
 ## Api Key
   Para a aplicação funcionar corretamente, você precisará ter uma chave de uso da api. Para conseguí-la, clique [nesse link](https://core.ac.uk/services/api)
