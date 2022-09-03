@@ -1,8 +1,9 @@
 import React from 'react';
+import Routes from './Routes';
 
 const App: React.FC = () => {
   return (
-    <div>Mettzer Challenge</div>
+    <Routes />
   );
 };
 
