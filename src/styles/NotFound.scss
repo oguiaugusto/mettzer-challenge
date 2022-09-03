@@ -1,0 +1,50 @@
+.not-found-page {
+  font-family: 'Exo 2', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 10px;
+
+  img {
+    width: 90%;
+    min-width: auto;
+  }
+
+  h1 {
+    color: #070c13;
+    text-align: center;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+    background-color: #264568;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #203d5f;
+      box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+      background-color: #1b3858;
+      box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  @media screen and (min-width: 400px) {
+    img {
+      width: 65%;
+      min-width: 400px;
+      max-width: 700px;
+      margin-bottom: 10px;
+    }
+  }
+}
