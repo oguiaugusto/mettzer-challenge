@@ -1,0 +1,64 @@
+.search-bar {
+  position: relative;
+  margin: 20px auto;
+  width: 90%;
+
+  input {
+    font-family: 'Titillium Web', sans-serif;
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 12px 10px;
+    width: 100%;
+
+    &:focus {
+      border-color: #aaa;
+      box-shadow: 0 2px 3px 1px rgba(59, 142, 190, 0.1);
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    transform-box: fill-box;
+    padding: 0 10px;
+    border: none;
+    background-color: #353535;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 60px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #313131;
+      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      background-color: #2d2d2d;
+      box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    width: 80%;
+
+    button {
+      width: 70px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 800px;
+
+    button {
+      width: 80px;
+    }
+  }
+}
