@@ -4,9 +4,12 @@ import { IArticle } from '../interfaces/Article';
 import fetchArticles from '../utils/fetchArticles';
 import '../styles/SearchBar.scss';
 
-const SearchBar: React.FC = () => {
+interface SearchBarProps {
+  setArticles: React.Dispatch<React.SetStateAction<IArticle[]>>;
+}
+
+const SearchBar: React.FC<SearchBarProps> = ({ setArticles }) => {
   const [query, setQuery] = useState('');
-  const [articles, setArticles] = useState<IArticle[]>([]); // <- to be moved later
 
   const handleSearch = async () => {
     const articlesResponse = await fetchArticles(query);
