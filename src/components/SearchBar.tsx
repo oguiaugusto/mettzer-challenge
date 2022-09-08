@@ -6,14 +6,20 @@ import '../styles/SearchBar.scss';
 
 interface SearchBarProps {
   setArticles: React.Dispatch<React.SetStateAction<IArticle[]>>;
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ setArticles }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ setArticles, setLoading }) => {
   const [query, setQuery] = useState('');
 
   const handleSearch = async () => {
+    setLoading(true);
+    setArticles([]);
+
     const articlesResponse = await fetchArticles(query);
     setArticles(articlesResponse);
+
+    setLoading(false);
   };
 
   return (
