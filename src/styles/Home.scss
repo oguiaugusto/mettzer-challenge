@@ -1,0 +1,11 @@
+.home-page {
+  .home-page__articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .loader {
+      margin: 20px auto;
+    }
+  }
+}

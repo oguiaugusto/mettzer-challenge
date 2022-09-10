@@ -1,7 +1,7 @@
 export interface IArticle {
   id: number;
   authors: string[];
-  type: string;
+  types: string[];
   title: string;
   description: string;
   fulltextUrls: string[];

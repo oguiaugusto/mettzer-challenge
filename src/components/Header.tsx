@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <div className="header__wrapper">
         <p className="header__title">FindSci</p>
         <ul className="header__links">
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/search">Home</Link></li>
           <li><Link to="/favorites">Favorites</Link></li>
         </ul>
       </div>

@@ -1,0 +1,120 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  border-bottom: 1px solid #cccccc;
+  width: 90%;
+
+  .article__icon {
+    display: none;
+  }
+
+  .article__main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    .article__title {
+      display: flex;
+      align-items: center;
+    }
+  
+    .article__authors {
+      color: #2c2c2c;
+    }
+  
+    .article__description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-clamp: 2;
+    }
+
+    .article__buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+  
+      .article__expand-urls {
+        display: flex;
+        align-items: center;
+        background: none;
+        border: none;
+        gap: 5px;
+      }
+  
+      .article__favorite {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        color: #e7b52c;
+    
+        &:hover {
+          color: #dfaf2b;
+          transform: scale(1.1);
+        }
+
+        &:active {
+          color: #d4a524;
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+
+
+  .article__urls {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 5px;
+    width: 100%;
+
+    a {
+      display: inline-block;
+      color: #2750a8;
+      font-size: 14px;
+      font-weight: 600;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  .article__urls-hide {
+    display: none;
+  }
+
+  @media screen and (min-width: 576px) {
+    width: 85%;
+
+    .article__main {
+      .article__title {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+  
+        .article__icon {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 800px;
+  }
+}
